@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Kouamé TV</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+header {
+  background: black;
+  padding: 15px;
+}
+
+button {
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>📺 Kouamé TV</h1>
+  <p>Chaîne chrétienne en direct</p>
+</header>
+
+<h2>Regarder la télévision</h2>
+
+<!-- BOUTONS -->
+<button onclick="playTV()">▶ Lecture</button>
+<button onclick="goBack()">🔙 Retour</button>
+
+<script>
+function playTV() {
+  // ouvre TBN+
+  window.location.href = "https://start.tbnplus.com";
+}
+
+function goBack() {
+  // revient toujours au site Kouamé TV
+  window.location.href = "/";
+}
+</script>
+
+</body>
+</html>
